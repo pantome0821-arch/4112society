@@ -14,7 +14,7 @@ except:
 genai.configure(api_key=API_KEY)
 
 model = genai.GenerativeModel(
-    'gemini-1.5-flash',
+    'gemini-1.5-flash-latest',
     system_instruction="""
     너는 초등학교 4학년 학생들에게 경상북도의 문화유산을 재미있게 설명해주는 친절한 도슨트야.
     말투는 다정하고 존댓말을 써. 어려운 한자어나 전문 용어는 초등학생이 이해하기 쉬운 비유로 풀어서 설명해.
