@@ -11,7 +11,7 @@ genai.configure(api_key=API_KEY)
 
 # 에러의 주범이었던 복잡한 역할 설정(system_instruction)을 완전히 빼버렸습니다!
 # 가장 빠르고 똑똑한 최신 모델의 이름만 단순하게 적어줍니다.
-model = genai.GenerativeModel('gemini-2.0-flash')
+model = genai.GenerativeModel('gemini-1.5-flash')
 
 # 2. 웹페이지 화면 구성 (UI)
 st.set_page_config(page_title="경북 문화유산 탐험대", page_icon="🏯", layout="centered")
