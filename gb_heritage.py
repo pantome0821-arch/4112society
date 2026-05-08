@@ -5,13 +5,13 @@ import google.generativeai as genai
 try:
     API_KEY = st.secrets["GOOGLE_API_KEY"]
 except:
-    API_KEY = "여기에_선생님의_API_키를_넣으세요"
+    API_KEY = "AIzaSyCo6QDFWyPB7NvtTpydJj9ZCcjP2YMBLyw"
 
 genai.configure(api_key=API_KEY)
 
 # 에러의 주범이었던 복잡한 역할 설정(system_instruction)을 완전히 빼버렸습니다!
 # 가장 빠르고 똑똑한 최신 모델의 이름만 단순하게 적어줍니다.
-model = genai.GenerativeModel('Gemini 2 Flash')
+model = genai.GenerativeModel('gemini-2.0-flash')
 
 # 2. 웹페이지 화면 구성 (UI)
 st.set_page_config(page_title="경북 문화유산 탐험대", page_icon="🏯", layout="centered")
